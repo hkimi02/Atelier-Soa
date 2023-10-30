@@ -1,0 +1,13 @@
+package org.sid.entities;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id; // Add this annotation
+    private String name;
+    private double price;
+}

@@ -1,0 +1,33 @@
+package org.sid;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+@SpringBootApplication
+@EnableFeignClients
+public class BillingServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BillingServiceApplication.class, args);
+	}
+	/*@Bean	
+	public CommandLineRunner start(BillRepository billRepository, ProductItemRepository productItemRepository,
+	                               InventoryServiceCilent inventoryServiceClient,
+	                               CustomerServiceClient customerServiceClient) {
+		
+	    return args -> {
+	        Customer customer = customerServiceClient.findCustomerById(1L);
+	        Bill bill=new Bill();
+	        bill.setBillingDate(new Date());
+	        bill.setCustomerId(customer.getId());
+	        billRepository.save(bill);
+	        inventoryServiceClient.findAll().getContent().forEach(p -> {
+	        	 productItemRepository.save(new ProductItem(
+	 	                null, null, p.getId(), p.getPrice(), (int)(1 + Math.random() * 1000), bill
+	 	            ));
+	        });
+	    };
+	}*/
+
+}
