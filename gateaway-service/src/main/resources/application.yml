@@ -1,4 +1,16 @@
 spring:
-  application:    name: "GATEAWAY-SERVICE"
-  cloud:   discovery:      enabled: true
-server:  port: 8888
+  application:
+    name: "GATEAWAY-SERVICE"
+  cloud:
+    discovery:
+      enabled: true
+server:
+  port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: always

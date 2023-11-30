@@ -45,6 +45,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\hkimi amin\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\products-app-master"/>
 			<item value="C:\Users\hkimi amin\Documents\workspace-spring-tool-suite-4-4.5.1.RELEASE\bill-service"/>
 			<item value="C:\Users\hkimi amin\Desktop\SOA ghassen"/>
 			<item value="C:\Users\hkimi amin\Desktop\SOA ghassen\Billing-service\src"/>
